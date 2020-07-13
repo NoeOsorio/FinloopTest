@@ -1,1 +1,13 @@
 @import "../global.scss";
+
+.errorPage{
+    margin: auto;
+    height: 100vh;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 3rem;
+    text-align: center;
+}

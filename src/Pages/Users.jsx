@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Redirect } from "react-router-dom";
 import { getUsers } from "../Services/auth.service";
 import "../Styles/Users.scss";
+import Error from "./Error";
 
 export default function Users() {
   const [users, setusers] = useState([]);
@@ -33,6 +34,8 @@ export default function Users() {
     }
   }, []);
   return (
+    !localStorage.getItem("token")
+? <Error></Error> :
     <div className="container">
       <p className="greetings">
         <span>Welcome User: </span>
