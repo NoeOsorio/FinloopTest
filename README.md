@@ -1,68 +1,45 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Finloop Test Noe
 
-## Available Scripts
+## Instrucciones de ejecución
 
-In the project directory, you can run:
+Para instalar los paquetes
 
-### `yarn start`
+### `npm install`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Para inciar la aplicación
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### `npm start`
 
-### `yarn test`
+## Uso de la app
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Login
+### http://localhost:3000/ o http://localhost:3000/login
+ 
+Aqui puede ingresar con el correo que se registro (si ya tiene cuenta)
+y su contraseña
 
-### `yarn build`
+en caso de n tener cuenta, puede dar clic en el botón "Crear cuenta" y lo llevara al formulario de registro
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Una vez llenados los datos, dar clic en login y si sus datos estan correcto, podrá acceder a Users
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Signup
+### http://localhost:3000/signup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para registrar una nueva cuenta tiene que ingresar:
+  - Un nombre se usuario (username) como por ejemplo: "Pikachu"
+  - Un correo como por ejemplo: "contact@pikachu.com"
+  - Una contraseña (recuerde que es secreta): como "***********" o "pikachu123"
 
-### `yarn eject`
+Una vez llenados los datos, dar clic en registrar y si sus datos estan correcto, podrá acceder a Users
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Users
+### http://localhost:3000/users
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+En esta pantalla, podrá visualiar los demás usuarios, asi mismo podrá visualizar su id de usuario
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Listo eso es todo, espero les guste. Muchas gracias
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+PD: Aun podría mejorarse el sistema de validación.
