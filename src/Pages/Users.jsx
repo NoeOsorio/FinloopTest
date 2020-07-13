@@ -1,13 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { Redirect } from "react-router-dom";
 import { getUsers } from "../Services/auth.service";
+import "../Styles/Users.scss";
 
 export default function Users() {
   const [users, setusers] = useState([]);
 
   let listUsers = () => {
     return users.map((user, index) => {
-      return <div key={index}>{user.username}</div>;
+      return (
+        <div className="user" key={index}>
+          <strong className="username">{user.username}</strong>
+          <br></br>
+          <span >{user.email}</span>
+        </div>
+      );
     });
   };
 
@@ -16,7 +23,7 @@ export default function Users() {
       let res = await getUsers(localStorage.getItem("token"));
       if (res) {
         console.log(res.data);
-          setusers(res.data.users);
+        setusers(res.data.users);
       } else {
         console.error("Algo salio mal");
       }
@@ -26,10 +33,13 @@ export default function Users() {
     }
   }, []);
   return (
-    <div>
-      <span>Welcome User</span>
-      <strong>{localStorage.getItem("id")}</strong>
-      {listUsers()}
+    <div className="container">
+      <p className="greetings">
+        <span>Welcome User: </span>
+        <strong> {localStorage.getItem("id")}</strong>
+      </p>
+      <h1>Users</h1>
+      <div className="users">{listUsers()}</div>
     </div>
   );
 }
